@@ -71,6 +71,7 @@
 .footer {
     flex: 1 0 auto;
     width: 100%;
+
     &__wrap {
         flex: 0 0 auto;
         flex-direction: column;
@@ -78,13 +79,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 60px;
         border: 1px solid $border;
         padding: 12px 15px 5px 15px;
         text-align: center;
         background: $white;
-        border-radius: 6px;
-
+        margin-top: 200px;
         &_left {
             margin-right: 30px;
         }
