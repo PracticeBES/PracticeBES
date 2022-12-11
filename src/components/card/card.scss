@@ -33,15 +33,14 @@
             ol {
                 li {
                     list-style: none;
+                    display: flex;
+                    flex-direction: column;
                 }
             }
 
-            &__left {
+            &__files {
                 display: flex;
-                flex-direction: column;
-            }
-            &__right {
-                display: flex;
+                align-items: center;
                 flex-direction: column;
             }
         }

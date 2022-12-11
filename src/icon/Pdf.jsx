@@ -6,8 +6,8 @@ const Pdf = () => {
             version="1.1"
             x="0px"
             y="0px"
-            height="25px"
-            width="25px"
+            height="22px"
+            width="22px"
             viewBox="0 0 303.188 303.188"
             style={{
                 enableBackground: "new 0 0 303.188 303.188",

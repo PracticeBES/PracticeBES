@@ -2,7 +2,7 @@ import React from "react";
 
 const Word = () => {
     return (
-        <svg width="32px" height="32px" viewBox="0 0 32 32">
+        <svg width="22px" height="22px" viewBox="0 0 32 32">
             <defs>
                 <linearGradient
                     id="a"
