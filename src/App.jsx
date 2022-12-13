@@ -33,16 +33,16 @@ function App() {
         <BrowserRouter>
             <Navbar />
             <Switch>
-                <Route path="/PracticeBES/main">
+                <Route path="/PracticeBES/build/main">
                     <MainPage
 
                     // arrayFiles={arrayFiles}
                     />
                 </Route>
-                <Route path="/PracticeBES/about">
+                <Route path="/PracticeBES/build/about">
                     <About />
                 </Route>
-                <Redirect to={"/PracticeBES/main"} />
+                <Redirect to={"/PracticeBES/build/main"} />
             </Switch>
             <Footer />
         </BrowserRouter>

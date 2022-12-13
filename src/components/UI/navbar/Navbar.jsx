@@ -6,10 +6,10 @@ const Navbar = () => {
     return (
         <div className="navbar">
             <div className="navbar__link">
-                <Link className="link" to="/PracticeBES/main">
+                <Link className="link" to="/PracticeBES/build/main">
                     Главная
                 </Link>
-                <Link className="link" to="/PracticeBES/about">
+                <Link className="link" to="/PracticeBES/build/about">
                     Тест
                 </Link>
             </div>
