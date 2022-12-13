@@ -1,0 +1,48 @@
+@import "../../../style/variables.scss";
+.main {
+    .card_content {
+        margin-top: 32px;
+        &__header {
+            font-size: 24px;
+            border: 1px solid $border;
+            padding: 5px 15px 5px 15px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: $main;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 6px;
+            background: $white;
+            border-radius: 6px;
+        }
+        &__wrap {
+            border: 1px solid $border;
+            border-radius: 6px;
+            background: $white;
+            .descr {
+                padding: 0px 5px 15px 25px;
+                font-size: 20px;
+                line-height: 1.5em;
+                p {
+                    span {
+                        font-size: 18px;
+                        font-style: italic;
+                        color: $main;
+                        opacity: 60%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .main {
+        .card_content {
+            margin-top: 16px;
+            &__header {
+                font-size: 18px;
+            }
+        }
+    }
+}

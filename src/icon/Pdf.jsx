@@ -3,7 +3,6 @@ import React from "react";
 const Pdf = () => {
     return (
         <svg
-            version="1.1"
             x="0px"
             y="0px"
             height="22px"

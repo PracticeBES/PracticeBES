@@ -1,0 +1,27 @@
+@import "../../../style/variables.scss";
+
+.footer {
+    width: 100%;
+    &__wrap {
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+        border: 1px solid $border;
+        padding: 12px 15px 5px 15px;
+        text-align: center;
+        background: $white;
+
+        &_left {
+            margin-right: 30px;
+        }
+        &_right {
+            display: flex;
+            flex-direction: column;
+            span {
+                font-size: 18px;
+                line-height: 1.5em;
+                letter-spacing: 0.1em;
+            }
+        }
+    }
+}
