@@ -9,8 +9,20 @@ const Navbar = () => {
                 <Link className="link" to="/PracticeBES/build/main">
                     Главная
                 </Link>
-                <Link className="link" to="/PracticeBES/build/about">
-                    Тест
+                <Link className="link" to="/PracticeBES/build/firstkurs">
+                    1 курс
+                </Link>
+                <Link className="link" to="/PracticeBES/build/secondkurs">
+                    2 курс
+                </Link>
+                <Link className="link" to="/PracticeBES/build/thirdkurs">
+                    3 курс
+                </Link>
+                <Link className="link" to="/PracticeBES/build/fourthkurs">
+                    4 курс
+                </Link>
+                <Link className="link" to="/PracticeBES/build/utility">
+                    Утилита
                 </Link>
             </div>
         </div>

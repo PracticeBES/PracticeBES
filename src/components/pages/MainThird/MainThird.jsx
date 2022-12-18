@@ -4,33 +4,25 @@ import CardContent from "../../UI/cardContent/CardContent";
 import CardList from "./components/cardList/CardList";
 import Header from "../../UI/header/Header";
 import Main from "./components/main/Main";
+import CountDown from "../../UI/timer/CountDown";
 
-const MainPage = ({ arrayFiles, arrayContent }) => {
-    console.log(arrayContent);
+const MainThird = ({ arrayFiles, finishTime }) => {
     return (
         <Main>
-            <Header />
+            <Header header={"Организация учебных и производственных практик"} />
             <CardList>
-                <CardContent
-                    arrayContent={[arrayContent[0]]}
-                    header={"Залупа"}
-                />
-                {/* <Card
+                <Card
                     header={"Учебная практика"}
                     arrayFiles={[arrayFiles[0], arrayFiles[1], arrayFiles[4]]}
                 />
                 <Card
                     header={"Производственная практика"}
-                    arrayFiles={[
-                        arrayFiles[0],
-                        arrayFiles[1],
-                        arrayFiles[2],
-                        arrayFiles[3],
-                    ]}
-                /> */}
+                    arrayFiles={[arrayFiles[0], arrayFiles[1], arrayFiles[2]]}
+                />
+                <CountDown finishTime={finishTime} />
             </CardList>
         </Main>
     );
 };
 
-export default MainPage;
+export default MainThird;

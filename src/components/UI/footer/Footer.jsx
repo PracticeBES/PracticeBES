@@ -11,7 +11,15 @@ export default function Footer() {
                 </div>
                 <div className="footer__wrap_right">
                     <span>Автор - Бакланова Елена Сергеевна</span>
-                    <span>Администор - Лебедев Игорь Владимирович</span>
+                    <span>
+                        <a
+                            target={"_blank"}
+                            rel={"noreferrer"}
+                            href="https://github.com/FekalisPoganchik"
+                        >
+                            Администратор - Лебедев Игорь Владимирович
+                        </a>
+                    </span>
                     <span>Все права защищены ©</span>
                 </div>
             </div>

@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "../../UI/card/Card";
 import CardContent from "../../UI/cardContent/CardContent";
 import CardList from "./components/cardList/CardList";
 import Header from "../../UI/header/Header";
 import Main from "./components/main/Main";
+import CountDown from "../../UI/timer/CountDown";
 
-const MainPage = ({ arrayFiles, arrayContent }) => {
+const MainPage = ({ arrayFiles, arrayContent, finishTime }) => {
     return (
         <Main>
-            <Header />
+            <Header header={"Организация учебных и производственных практик"} />
             <CardList>
                 <CardContent
                     header={"Отчет по практике"}
@@ -186,19 +187,7 @@ const MainPage = ({ arrayFiles, arrayContent }) => {
                     ]}
                 />
 
-                {/* <Card
-                    header={"Учебная практика"}
-                    arrayFiles={[arrayFiles[0], arrayFiles[1], arrayFiles[4]]}
-                />
-                <Card
-                    header={"Производственная практика"}
-                    arrayFiles={[
-                        arrayFiles[0],
-                        arrayFiles[1],
-                        arrayFiles[2],
-                        arrayFiles[3],
-                    ]}
-                /> */}
+                <CountDown finishTime={finishTime} />
             </CardList>
         </Main>
     );

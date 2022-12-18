@@ -1,11 +1,22 @@
 import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
-import About from "./components/pages/About";
 import MainPage from "./components/pages/Main/Main";
+
 import Navbar from "./components/UI/navbar/Navbar";
 import Footer from "./components/UI/footer/Footer";
 import "./style/app.scss";
+import MainFirst from "./components/pages/MainFirst/MainFirst";
+import MainSecond from "./components/pages/MainSecond/MainSecond";
+import MainThird from "./components/pages/MainThird/MainThird";
+import MainFourth from "./components/pages/MainFourth/MainFourth";
+import Utility from "./components/pages/MainUtility/Utility";
+import { useState } from "react";
 
 function App() {
+    const [finishTime, setFinishTime] = useState(
+        JSON.parse(window.localStorage.getItem("endTimer")) || []
+    );
+    localStorage.setItem("endTimer", JSON.stringify(finishTime));
+
     const arrayFiles = [
         {
             url: "https://vk.com/doc199958883_654996311?hash=WSqND8vp5uhWqAwQIrMNmxjhdzp8y9VRUTja9tFI9z8&dl=itLtcwzoPabEyM0XM9PO8PqFSLnQR0vT3SGcoo9KUyH",
@@ -34,13 +45,37 @@ function App() {
             <Navbar />
             <Switch>
                 <Route path="/PracticeBES/build/main">
-                    <MainPage
-
-                    // arrayFiles={arrayFiles}
+                    <MainPage finishTime={finishTime} />
+                </Route>
+                <Route path="/PracticeBES/build/firstkurs">
+                    <MainFirst
+                        arrayFiles={arrayFiles}
+                        finishTime={finishTime}
                     />
                 </Route>
-                <Route path="/PracticeBES/build/about">
-                    <About />
+                <Route path="/PracticeBES/build/secondkurs">
+                    <MainSecond
+                        arrayFiles={arrayFiles}
+                        finishTime={finishTime}
+                    />
+                </Route>
+                <Route path="/PracticeBES/build/thirdkurs">
+                    <MainThird
+                        arrayFiles={arrayFiles}
+                        finishTime={finishTime}
+                    />
+                </Route>
+                <Route path="/PracticeBES/build/fourthkurs">
+                    <MainFourth
+                        arrayFiles={arrayFiles}
+                        finishTime={finishTime}
+                    />
+                </Route>
+                <Route path="/PracticeBES/build/Utility">
+                    <Utility
+                        setFinishTime={setFinishTime}
+                        finishTime={finishTime}
+                    />
                 </Route>
                 <Redirect to={"/PracticeBES/build/main"} />
             </Switch>

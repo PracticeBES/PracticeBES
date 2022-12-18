@@ -21,6 +21,25 @@
                 font-size: 18px;
                 line-height: 1.5em;
                 letter-spacing: 0.1em;
+                a {
+                    text-decoration: none;
+                    color: black;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .footer {
+        width: 100%;
+        &__wrap {
+            &_right {
+                span {
+                    font-size: 14px;
+                    letter-spacing: 0.05em;
+                }
             }
         }
     }
