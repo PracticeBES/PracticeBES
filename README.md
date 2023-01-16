@@ -1,1 +1,2 @@
-author: https://github.com/FekalisPoganchik
+npm i
+npm run start
